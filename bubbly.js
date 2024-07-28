@@ -15,3 +15,11 @@ var animateButton = function(e) {
   for (var i = 0; i < bubblyButtons.length; i++) {
     bubblyButtons[i].addEventListener('click', animateButton, false);
   }
+
+
+
+  // disable right click
+
+  document.addEventListener('contextmenu', (t) => {
+    t.preventDefault(t)
+  },false)
