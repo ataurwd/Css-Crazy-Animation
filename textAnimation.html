@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 90%;
+            /* background-color: black; */
+            padding: 30px;
+        }
+        .box h1 {
+        background: linear-gradient(to right, darkorange 10%, white 50%, deepskyblue 60%);
+        background-size: 200% auto;
+        color: white;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate 1.5s linear infinite;
+        display: inline-block;
+        margin: 0;
+        font-size: 40px; /* 60px */
+        text-transform: uppercase;
+        font-weight: 600;
+        }
+
+        @keyframes animate {
+            to{
+                background-position: 200% center;
+            }
+        }
+        /* @media screen and (max-width: 576px) {
+            .box{
+                width: 100%;
+            }
+            .box h1 {
+            font-size: 20vh;
+        }
+        } */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>
+            Text Animation
+        </h1>
+    </div>
+
+    <div>
+        <p>Full Video in the Page</p>
+    </div>
+</body>
+</html>
